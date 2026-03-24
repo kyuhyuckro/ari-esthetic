@@ -675,7 +675,7 @@
   .hero-left .fade-up:nth-child(3) { animation-delay: 0.4s; }
   .hero-left .fade-up:nth-child(4) { animation-delay: 0.55s; }
 
-  /* ── MOBILE ── */
+  /* ── TABLET (max 900px) ── */
   @media (max-width: 900px) {
     nav { padding: 1.2rem 2rem; }
     .nav-links { display: none; }
@@ -687,8 +687,68 @@
     .intro-left { border-right: none; padding-right: 0; border-bottom: 1px solid var(--cream-dark); padding-bottom: 3rem; }
     .services-grid { grid-template-columns: 1fr; }
     .services-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-    footer { flex-direction: column; gap: 1.5rem; text-align: center; }
+    .reviews-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .gallery-tabs { gap: 1.2rem; flex-wrap: wrap; }
+    .reviews-section { padding: 5rem 2rem; }
+    .gallery-section { padding: 5rem 2rem; }
+    footer { flex-direction: column; gap: 1.5rem; text-align: center; padding: 3rem 2rem; }
     .form-row { grid-template-columns: 1fr; }
+  }
+
+  /* ── MOBILE (max 480px) ── */
+  @media (max-width: 480px) {
+    nav { padding: 1rem 1.2rem; }
+    .nav-logo { font-size: 1.2rem; letter-spacing: 0.12em; }
+    .lang-switcher { margin-right: 0.5rem; gap: 0.25rem; }
+    .lang-btn { font-size: 1.1rem; padding: 2px 3px; }
+    .nav-book { font-size: 0.62rem; padding: 0.5rem 1rem; letter-spacing: 0.1em; }
+
+    .hero-left { padding: 4.5rem 1.4rem 3rem; }
+    .hero-title { font-size: clamp(2.4rem, 9vw, 3.5rem); }
+    .hero-sub { font-size: 0.78rem; line-height: 1.7; margin-bottom: 2rem; }
+    .hero-ctas { flex-direction: column; gap: 0.8rem; }
+    .btn-primary, .btn-ghost { padding: 0.9rem 1.8rem; font-size: 0.68rem; text-align: center; }
+
+    section, .services, .process, .booking { padding: 3.5rem 1.4rem; }
+    .reviews-section { padding: 3.5rem 1.4rem; }
+    .gallery-section { padding: 3.5rem 1.4rem; }
+
+    .section-title { font-size: clamp(1.8rem, 7vw, 2.8rem); margin-bottom: 1rem; }
+
+    .intro-left { padding-bottom: 2rem; margin-bottom: 0; }
+    .intro-tagline { font-size: 1.4rem; }
+    .intro-text { font-size: 0.95rem; line-height: 1.8; }
+    .intro-stat { margin-top: 2rem; gap: 1.5rem; }
+    .stat-num { font-size: 2.4rem; }
+
+    .svc-category-title { font-size: 1.5rem; }
+    .svc-list { grid-template-columns: 1fr; }
+    .service-card { padding: 1.4rem 1.2rem; }
+    .svc-name { font-size: 1rem; }
+    .svc-desc { font-size: 0.8rem; }
+
+    .process { gap: 2rem; }
+    .step { padding: 1.5rem 0; gap: 1.2rem; }
+    .step-name { font-size: 1.05rem; }
+    .step-desc { font-size: 0.8rem; }
+    .process-desc { font-size: 0.85rem; }
+
+    .reviews-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+    .review-card { padding: 1.8rem 1.4rem; }
+    .review-text { font-size: 0.98rem; }
+
+    .gallery-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    .gallery-tabs { gap: 0.8rem; padding-bottom: 0.8rem; margin-bottom: 2rem; }
+    .gallery-tab { font-size: 0.65rem; letter-spacing: 0.12em; padding-bottom: 0.8rem; }
+
+    .booking { gap: 2rem; }
+    .booking-desc { font-size: 0.8rem; }
+    .contact-item { gap: 1rem; }
+
+    footer { padding: 2.5rem 1.4rem; gap: 1rem; }
+    .footer-logo { font-size: 1.1rem; }
+    .footer-copy { font-size: 0.6rem; }
   }
 </style>
 </head>
