@@ -443,6 +443,44 @@
     gap: 0;
   }
 
+  /* ── ABOUT (Bio) ── */
+  .about-bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 6rem;
+    align-items: start;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-bio-image {
+    width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    object-position: top center;
+    display: block;
+  }
+
+  .about-bio-text p {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: var(--taupe);
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-bio-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    border-top: 1px solid var(--cream-dark);
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+  }
+
   .step {
     display: flex;
     gap: 2rem;
@@ -684,6 +722,9 @@
     .hero-left { padding: 5rem 2rem 4rem; }
     section, .services, .process, .booking { padding: 5rem 2rem; }
     .intro, .process, .booking { grid-template-columns: 1fr; gap: 3rem; }
+    .about-bio-grid { grid-template-columns: 1fr; gap: 3rem; margin-bottom: 2rem; }
+    .about-bio-image { max-height: 65vh; }
+    .specialties-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .intro-left { border-right: none; padding-right: 0; border-bottom: 1px solid var(--cream-dark); padding-bottom: 3rem; }
     .services-grid { grid-template-columns: 1fr; }
     .services-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
@@ -733,6 +774,12 @@
     .step-name { font-size: 1.05rem; }
     .step-desc { font-size: 0.8rem; }
     .process-desc { font-size: 0.85rem; }
+
+    .about-bio-grid { gap: 2rem; }
+    .about-bio-image { max-height: 60vh; }
+    .about-bio-text p { font-size: 0.95rem; line-height: 1.8; }
+
+    .specialties-grid { gap: 2rem; }
 
     .reviews-grid { grid-template-columns: 1fr; gap: 1.2rem; }
     .review-card { padding: 1.8rem 1.4rem; }
@@ -830,19 +877,19 @@
   </div>
 
   <!-- PHOTO + BIO -->
-  <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:6rem;align-items:start;margin-bottom:2.5rem;">
+  <div class="about-bio-grid">
     <div>
-      <img src="images/ari_kang_bio.jpg" alt="Ari Kang" style="width:100%;max-height:580px;object-fit:cover;object-position:top center;">
+      <img src="images/ari_kang_bio.jpg" alt="Ari Kang" class="about-bio-image">
     </div>
-    <div>
-      <p data-i18n="bio_p1" style="font-size:0.88rem;line-height:1.75;color:var(--taupe);font-weight:300;margin-bottom:1.2rem;">Ari Kang is a licensed esthetician with over five years of experience, trained in Seoul and Busan, South Korea. Her practice is grounded in the Korean approach to skincare, one that treats skin not as a surface to be corrected, but as a reflection of overall wellness that deserves consistent, expert attention.</p>
-      <p data-i18n="bio_p2" style="font-size:0.88rem;line-height:1.75;color:var(--taupe);font-weight:300;margin-bottom:1.2rem;">With a Bachelor's degree in Business from Korea, studies abroad in China, and a Master's degree in Business from Missouri, her global background shapes the way ARI Esthetic is built and run. That same sense of care and intentionality carries into every treatment she provides.</p>
-      <p data-i18n="bio_p3" style="font-size:0.88rem;line-height:1.75;color:var(--taupe);font-weight:300;">At ARI Esthetic, every treatment begins with a thorough skin assessment. She believes that real results come from truly understanding each client's skin history and then bringing together the right technique, knowledge, and care to make it happen.</p>
+    <div class="about-bio-text">
+      <p data-i18n="bio_p1">Ari Kang is a licensed esthetician with over five years of experience, trained in Seoul and Busan, South Korea. Her practice is grounded in the Korean approach to skincare, one that treats skin not as a surface to be corrected, but as a reflection of overall wellness that deserves consistent, expert attention.</p>
+      <p data-i18n="bio_p2">With a Bachelor's degree in Business from Korea, studies abroad in China, and a Master's degree in Business from Missouri, her global background shapes the way ARI Esthetic is built and run. That same sense of care and intentionality carries into every treatment she provides.</p>
+      <p data-i18n="bio_p3">At ARI Esthetic, every treatment begins with a thorough skin assessment. She believes that real results come from truly understanding each client's skin history and then bringing together the right technique, knowledge, and care to make it happen.</p>
     </div>
   </div>
 
   <!-- SPECIALTIES -->
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3rem;border-top:1px solid var(--cream-dark);padding-top:2.5rem;margin-top:2.5rem;">
+  <div class="specialties-grid">
     <div>
       <span style="font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--taupe);display:block;margin-bottom:0.8rem;">Specialty</span>
       <h3 data-i18n="spec1_title" style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-style:italic;font-weight:300;color:var(--charcoal);margin-bottom:1rem;">Problematic Skin</h3>
