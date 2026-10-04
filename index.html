@@ -446,7 +446,7 @@
   /* ── ABOUT (Bio) ── */
   .about-bio-grid {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
+    grid-template-columns: 1fr;
     gap: 6rem;
     align-items: start;
     margin-bottom: 2.5rem;
@@ -879,9 +879,6 @@
 
   <!-- PHOTO + BIO -->
   <div class="about-bio-grid">
-    <div>
-      <img src="images/ari_kang_bio.jpg" alt="Ari Kang" class="about-bio-image">
-    </div>
     <div class="about-bio-text">
       <p data-i18n="bio_p1">Ari Kang is a licensed esthetician with over five years of experience, trained in Seoul and Busan, South Korea. Her practice is grounded in the Korean approach to skincare, one that treats skin not as a surface to be corrected, but as a reflection of overall wellness that deserves consistent, expert attention.</p>
       <p data-i18n="bio_p2">With a Bachelor's degree in Business from Korea, studies abroad in China, and a Master's degree in Business from Missouri, her global background shapes the way ARI Esthetic is built and run. That same sense of care and intentionality carries into every treatment she provides.</p>
@@ -938,17 +935,17 @@
       <div class="svc-category-title" data-i18n="cat_facials"><em>K</em>-Facials</div>
       <div class="svc-list" style="grid-template-columns: repeat(3, 1fr);">
         <div class="service-card">
-          <div class="svc-name">Basic Facial</div>
+          <div class="svc-name" data-i18n="svc_essential">Essential Facial</div>
           <div class="svc-duration">1 hr 15 min</div>
           <div class="svc-desc" data-i18n="sd_basic">Boosts moisture and glow, great for all skin types</div>
         </div>
         <div class="service-card">
-          <div class="svc-name">Standard Facial</div>
+          <div class="svc-name" data-i18n="svc_signature_facial">Signature Facial</div>
           <div class="svc-duration">1 hr 15 min</div>
           <div class="svc-desc" data-i18n="sd_standard">Firms and sculpts for a youthful look</div>
         </div>
         <div class="service-card">
-          <div class="svc-name">Premium Facial</div>
+          <div class="svc-name" data-i18n="svc_ari_premium">ARI Premium Facial</div>
           <div class="svc-duration">1 hr 30 min</div>
           <div class="svc-desc" data-i18n="sd_premium">Top-grade products + massage, deep hydration and tightening in one</div>
         </div>
@@ -980,31 +977,21 @@
     <!-- Advanced Treatments -->
     <div class="svc-category">
       <div class="svc-category-title" data-i18n="cat_advanced">Advanced <em>Treatments</em></div>
-      <div class="svc-list" style="grid-template-columns: repeat(2, 1fr); border-bottom: none;">
+      <div class="svc-list" style="grid-template-columns: repeat(1, 1fr); border-bottom: none;">
         <div class="service-card">
-          <div class="svc-name">Microneedling</div>
+          <div class="svc-name" data-i18n="svc_micro">Microneedling</div>
           <div class="svc-duration">1 hr 15 min</div>
           <div class="svc-desc" data-i18n="sd_micro">Improves wrinkles, scars, and pigmentation for a smoother, more even complexion</div>
         </div>
         <div class="service-card">
-          <div class="svc-name">Microneedling + Lymphatic Massage</div>
-          <div class="svc-duration">1 hr 45 min</div>
-          <div class="svc-desc" data-i18n="sd_microlymph">Advanced laser care combined with lymphatic massage for enhanced lifting and brightening effects</div>
-        </div>
-        <div class="service-card">
-          <div class="svc-name">Standard Toning Care</div>
+          <div class="svc-name" data-i18n="svc_laser_toning">Laser Toning Care</div>
           <div class="svc-duration">1 hr 20 min</div>
           <div class="svc-desc" data-i18n="sd_toning">Targets pigmentation, pores, and uneven texture for a clearer, more radiant complexion</div>
-        </div>
-        <div class="service-card">
-          <div class="svc-name">Premium Toning Care</div>
-          <div class="svc-duration">1 hr 35 min</div>
-          <div class="svc-desc" data-i18n="sd_toningp">Enhanced toning with lymphatic massage for deeper detox and a visibly brightened, sculpted result</div>
         </div>
       </div>
       <div class="svc-list" style="grid-template-columns: repeat(1, 1fr); margin-top: 0; border-top: none;">
         <div class="service-card">
-          <div class="svc-name">ARI Peel</div>
+          <div class="svc-name" data-i18n="svc_ari_peel">ARI Peel</div>
           <div class="svc-duration">1 hr 15 min</div>
           <div class="svc-desc" data-i18n="sd_aripeel">Pure herbal micro-particles infused into the skin to stimulate regeneration, boost circulation, and renew from within</div>
         </div>
@@ -1016,21 +1003,33 @@
       <div class="svc-category-title" data-i18n="cat_acne">Acne <em>Treatments</em></div>
       <div class="svc-list" style="grid-template-columns: repeat(3, 1fr);">
         <div class="service-card">
-          <div class="svc-name">Acne Treatment</div>
+          <div class="svc-name" data-i18n="svc_acne">Acne Treatment</div>
           <div class="svc-duration">1 hr 30 min</div>
           <div class="svc-desc" data-i18n="sd_acne">Targets acne at the root for a clearer, balanced complexion</div>
         </div>
         <div class="service-card">
-          <div class="svc-name">3-Weeks Acne Healing Program</div>
+          <div class="svc-name" data-i18n="svc_acne_3wk">3-Weeks Acne Healing Program</div>
           <div class="svc-duration">1 hr 30 min</div>
         </div>
         <div class="service-card">
-          <div class="svc-name">5-Weeks Acne Healing Program</div>
+          <div class="svc-name" data-i18n="svc_acne_5wk">5-Weeks Acne Healing Program</div>
           <div class="svc-duration">1 hr 30 min</div>
         </div>
       </div>
     </div>
+    <!-- Signature -->
+    <div class="svc-category">
+      <div class="svc-category-title" style="color:var(--red);" data-i18n="cat_signature">
+        Signature
+      </div>
 
+      <div class="svc-list" style="grid-template-columns: repeat(1, 1fr);">
+        <div class="service-card">
+          <div class="svc-name" data-i18n="svc_lymphatic_sculpt">ARI Lymphatic Sculpting Massage</div>
+          <div class="svc-desc" data-i18n="sd_lymphatic_addon">Available as an add-on to any Advanced treatment</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1381,6 +1380,33 @@ var svcDescs = {
 };
 if (typeof translations !== 'undefined') {
   ['en','ko','zh'].forEach(function(lang) { Object.assign(translations[lang], svcDescs[lang]); });
+}
+// Current service-name and Signature translations
+var currentServiceKeys = {
+  en: {
+    svc_essential:'Essential Facial', svc_signature_facial:'Signature Facial', svc_ari_premium:'ARI Premium Facial',
+    svc_micro:'Microneedling', svc_laser_toning:'Laser Toning Care', svc_ari_peel:'ARI Peel',
+    svc_acne:'Acne Treatment', svc_acne_3wk:'3-Weeks Acne Healing Program', svc_acne_5wk:'5-Weeks Acne Healing Program',
+    cat_signature:'Signature', svc_lymphatic_sculpt:'ARI Lymphatic Sculpting Massage',
+    sd_lymphatic_addon:'Available as an add-on to any Advanced treatment'
+  },
+  ko: {
+    svc_essential:'에센셜 페이셜', svc_signature_facial:'시그니처 페이셜', svc_ari_premium:'ARI 프리미엄 페이셜',
+    svc_micro:'마이크로니들링', svc_laser_toning:'레이저 토닝 케어', svc_ari_peel:'ARI 필',
+    svc_acne:'여드름 케어', svc_acne_3wk:'3주 여드름 힐링 프로그램', svc_acne_5wk:'5주 여드름 힐링 프로그램',
+    cat_signature:'시그니처', svc_lymphatic_sculpt:'ARI 림프 윤곽 마사지',
+    sd_lymphatic_addon:'모든 고급 집중 케어에 추가 옵션으로 이용 가능합니다'
+  },
+  zh: {
+    svc_essential:'基础焕颜护理', svc_signature_facial:'招牌焕颜护理', svc_ari_premium:'ARI 尊享焕颜护理',
+    svc_micro:'微针焕肤', svc_laser_toning:'激光净肤护理', svc_ari_peel:'ARI 草本焕肤',
+    svc_acne:'祛痘护理', svc_acne_3wk:'3周祛痘修护疗程', svc_acne_5wk:'5周祛痘修护疗程',
+    cat_signature:'招牌护理', svc_lymphatic_sculpt:'ARI 淋巴轮廓塑形按摩',
+    sd_lymphatic_addon:'可作为任意进阶疗程的加购项目'
+  }
+};
+if (typeof translations !== 'undefined') {
+  ['en','ko','zh'].forEach(function(lang) { Object.assign(translations[lang], currentServiceKeys[lang]); });
 }
 </script>
 <script>
